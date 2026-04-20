@@ -11,9 +11,9 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, DistilBertModel
 
-# python process_data.py --path=HouseholdA --datatype=HOMER -y --coarse
-# python process_data.py --path=HouseholdB --datatype=HOMER -y --coarse
-# python process_data.py --path=HouseholdC --datatype=HOMER -y --coarse
+# python process_data.py --path=HouseholdA
+# python process_data.py --path=HouseholdB
+# python process_data.py --path=HouseholdC
 
 
 color_map = {
@@ -57,12 +57,6 @@ color_map = {
 color_palette = sns.color_palette()+sns.color_palette(palette='dark')
 color_palette = color_palette * 10
 
-# from graph_visualizations import visualize_routine, visualize_parsed_routine
-DATASET_TYPES = ['HOMER',
-                 'VH',
-                 'WAH']
-
-
 def not_a_tree(original_edges, sparse_edges, nodes):
     num_parents = sparse_edges.sum(axis=-1)
     for i,num_p in enumerate(num_parents):
@@ -86,24 +80,6 @@ def _sparsify(edges):
     remove = np.matmul(dense_edges, dense_edges)
     sparse_edges = dense_edges * (remove==0).astype(int)
     return sparse_edges
-
-def multiple_activities(dataset_type):
-    if dataset_type in ['HOMER', 'VH']:
-        return False
-    elif dataset_type in ['WAH']:
-        return True
-    raise KeyError('Invalid Dataset type')
-
-def data_dir(dataset_type, data_category, datadir):
-    if dataset_type == 'HOMER':
-        subdirs = {'train': 'routines_train','test': 'routines_test'}
-    elif dataset_type in ['WAH', 'VH']:
-        subdirs = {'train': 'train','test': 'test'}
-    else:
-        raise KeyError('Invalid Dataset type')
-    return os.path.join(datadir, subdirs[data_category])
-
-
 
 class DistillBERTEmbeddingGenerator():
     def __init__ (self):
@@ -142,43 +118,12 @@ class DistillBERTEmbeddingGenerator():
 
 
 class readDataFiles():
-    def __init__(self, type_in, dirpath, common_data, coarse=False):
+    def __init__(self, dirpath, common_data):
         self.dirpath = dirpath
         self.common_data = common_data
-        getters = {'HOMER': self.homer_get, 'VH': self.virtualhome_get, 'WAH': self.watchandhelp_get}
-        lengths = {'HOMER': self.homer_len, 'VH': self.virtualhome_len, 'WAH': self.watchandhelp_len}
-        
-        assert type_in in DATASET_TYPES, "Invalid dataset type"
-        self.get = getters[type_in]
-        self.len = lengths[type_in]
-        self.activity_key = 'activities_coarse' if coarse else 'activities'
+        self.activity_key = 'activities_coarse'
 
-
-    def virtualhome_get(self, index):
-        filename = os.listdir(os.path.join(self.dirpath,'graphs'))[index]
-        print('Processing file: ', filename)
-        filepath_graph = os.path.join(self.dirpath,'graphs',filename)
-        filepath_script = os.path.join(self.dirpath,'scripts',filename.replace('.json','.txt'))
-        graph_sequence = json.load(open(filepath_graph))['graph_state_list']
-        activity = torch.Tensor([self.common_data['activities'].index(open(filepath_script).readline().strip())]).to(int)
-        # activity_onehot = F.one_hot(activity, num_classes=len(self.common_data['activities']))
-        return graph_sequence, activity, None, filename.split('.')[0]
-
-    def virtualhome_len(self):
-        return len(os.listdir(os.path.join(self.dirpath,'graphs')))
-
-    def watchandhelp_get(self, index):
-        filename = os.listdir(self.dirpath)[index]
-        print('Processing file: ', filename)
-        data = json.load(open(os.path.join(self.dirpath,filename)))
-        graph_sequence = data['graphs']
-        activity = torch.Tensor(data['goals']).unsqueeze(0).repeat(len(graph_sequence),1)
-        return graph_sequence, activity, torch.zeros((len(graph_sequence))), filename.split('.')[0]
-
-    def watchandhelp_len(self):
-        return len(os.listdir(self.dirpath))
-
-    def homer_get(self, index):
+    def get(self, index):
         filename = os.listdir(self.dirpath)[index]
         print('Processing file: ', filename)
         data = json.load(open(os.path.join(self.dirpath,filename)))
@@ -188,95 +133,16 @@ class readDataFiles():
         # activity_onehot = F.one_hot(activities, num_classes=len(self.common_data['activities']))
         return graph_sequence, activities, times, filename.split('.')[0]
     
-    def homer_len(self):
+    def len(self):
         return len(os.listdir(self.dirpath))
 
 class readClassFiles():
-    def __init__(self, type_in, dirpath, coarse=False):
+    def __init__(self, dirpath):
         self.dirpath = dirpath
-        self.getter = {'HOMER': self.homer_get, 'VH': self.virtualhome_get, 'WAH': self.watchandhelp_get}[type_in]
-        assert type_in in DATASET_TYPES, "Invalid dataset type"
-        self.activity_key = 'activities_coarse' if coarse else 'activities'
+        self.activity_key = 'activities_coarse'
     
     def __call__(self):
-        return self.getter()
-
-    def watchandhelp_get(self):
-        metadata_path = os.path.join(self.dirpath, 'metadata.json')
-        metadata = json.load(open(metadata_path))
-        common_data['node_classes'] = ['home'] + metadata['node_classes']
-        common_data['activities'] = metadata['activities']
-        common_data['edge_keys'] = ['INSIDE', 'ON']
-        common_data['ignored_node_classes'] = ['wall','light', 'ceiling', 'floor', 'curtain', 'maindoor']
-        # common_data['node_idx_from_id'] = {}
-        # common_data['node_class_from_idx'] = {}
-        # common_data['node_ids'] = []
-        common_data['static_node_categories'] = ["Rooms", "Furniture", "Decor", "Appliances", "Home"]
-        return common_data
-
-    def virtualhome_get(self):
-        metadata_path = os.path.join(self.dirpath, 'metadata.json')
-        metadata = json.load(open(metadata_path))
-        common_data = {}
-        common_data['node_classes'] = ['home'] + metadata['node_classes']
-        common_data['activities'] = metadata['activities']
-        common_data['edge_keys'] = ['INSIDE', 'ON']
-        common_data['ignored_node_classes'] = ['wall','light', 'ceiling', 'floor', 'curtain', 'maindoor']
-        common_data['static_node_categories'] = ["Rooms", "Furniture", "Decor", "Appliances", "Home"]
-        return common_data
-    
-    def homer_get(self):
         common_data = json.load(open("/coc/flash5/mpatel377/repos/CoAdaptationSimulation/external/HOMER_PLUS/common_data.json", 'r'))
-        # del common_data['node_classes']
-        # del common_data['node_categories']
-        # del common_data['static_nodes']
-        # info = {
-        #     'dt': 10,
-        #     'start_time': 360,
-        #     'end_time': 1440,
-        # }
-        # classes = json.load(open(os.path.join(self.dirpath, '..', 'classes.json'), 'r'))
-        # for k in ['dt', 'start_time', 'end_time']:
-        #     if k in classes:
-        #         common_data[k] = classes[k]
-        #     else:
-        #         common_data[k] = info[k]
-        # common_data['node_classes'] = ['home'] + [n['class_name'] for n in classes['nodes']]   # if not ignore_node(n)]
-        # common_data['node_categories'] = ['home'] + [n['category'] for n in classes['nodes']]  # if not ignore_node(n)]
-        # # common_data['node_ids'] = [n['id'] for n in classes['nodes'] if not ignore_node(n)]
-        # # common_data['node_idx_from_id'] = {int(n):i for i,n in enumerate(common_data['node_ids'])}
-        # common_data['activities'] = {}
-        # common_data['activities'] = ["unknown"] + ["idle"] + classes[self.activity_key]
-        # common_data['activity_conversion'] = {'to_coarse':{}, 'to_fine':{}}
-        # if self.activity_key == 'activities_coarse':
-        #     common_data['activity_conversion']['to_coarse'] = {coarse:coarse for coarse, _ in classes['activities_hierarchy'].items()}
-        #     common_data['activity_conversion']['to_fine'] = classes['activities_hierarchy']
-        # if self.activity_key == 'activities':
-        #     common_data['activity_conversion']['to_coarse'] = {}
-        #     common_data['activity_conversion']['to_fine'] = {}
-        #     for coarse, fine_list in classes['activities_hierarchy'].items():
-        #         for fine in fine_list:
-        #             common_data['activity_conversion']['to_coarse'][fine] = coarse
-        #             common_data['activity_conversion']['to_fine'] [fine] = [fine]
-        # print (common_data['activities'])
-
-        # # Diagonal nodes are always irrelevant
-        # common_data['nonstatic_edges'] = 1 - torch.eye(len(common_data['node_classes']))
-        # # Rooms, furniture and appliances nodes don't move
-        # common_data['nonstatic_edges'][np.where(np.array(common_data['node_categories']) == "home"),:] = 0
-        # common_data['nonstatic_edges'][np.where(np.array(common_data['node_categories']) == "Rooms"),:] = 0
-        # common_data['nonstatic_edges'][np.where(np.array(common_data['node_categories']) == "Furniture"),:] = 0
-        # common_data['nonstatic_edges'][np.where(np.array(common_data['node_categories']) == "Decor"),:] = 0
-        # common_data['nonstatic_edges'][np.where(np.array(common_data['node_categories']) == "Appliances"),:] = 0
-        # common_data['seen_edges'] = torch.zeros_like(common_data['nonstatic_edges'])
-        # common_data['home_graph'] = None
-
-        # common_data['edge_keys'] = classes['edges']
-        # static = lambda category : category in ["Furniture", "Room"]
-        # common_data['static_nodes'] = [n['id'] for n in classes['nodes'] if static(n['category'])]  # and not ignore_node(n)]
-        # common_data['ignored_node_classes'] = ['wall','light', 'ceiling', 'floor', 'curtain', 'maindoor']
-        # common_data['static_node_categories'] = ['Rooms', 'Furniture', 'Decor', 'Appliances', 'Home']
-        
         return common_data
 
 
@@ -285,10 +151,7 @@ class ProcessDataset():
     def __init__(self, 
                  datadir, 
                  output_path,
-                 dataset_type,
                  overwrite=False,
-                 stack_in_time=True,
-                 coarse=False,
                  dt=None
                  ):
 
@@ -306,8 +169,6 @@ class ProcessDataset():
 
         if dt is not None:
             output_path += f'_{dt}'
-        if coarse:
-            output_path += '_coarse'
         output_train_path = os.path.join(output_path, 'train')
         output_test_path = os.path.join(output_path, 'test')
         if os.path.exists(output_train_path): 
@@ -323,18 +184,17 @@ class ProcessDataset():
             shutil.rmtree(output_path)
         os.makedirs(output_test_path)
 
-        self.dataset_type = dataset_type
 
-        self.common_data = readClassFiles(self.dataset_type, datadir, coarse=coarse)()
+        self.common_data = readClassFiles(datadir)()
         if dt is not None: self.common_data['dt'] = dt
-        self.common_data['dataset_type'] = self.dataset_type
-        self.common_data['multiple_activities'] = multiple_activities(self.dataset_type)
+        self.common_data['dataset_type'] = 'HOMER'
+        self.common_data['multiple_activities'] = False
         self.common_data['index_list'] = {'train':[], 'test':[]}
         self.LMEmbedding.add_objects(self.common_data['node_classes'])
         self.LMEmbedding.add_activities(self.common_data['activities'])
         
-        self.read_data(readDataFiles(self.dataset_type, data_dir(self.dataset_type, 'test', datadir), self.common_data, coarse=coarse), output_test_path, stack_in_time, index_list=self.common_data['index_list']['test'], plot_graphs=True)
-        self.read_data(readDataFiles(self.dataset_type, data_dir(self.dataset_type, 'train', datadir), self.common_data, coarse=coarse), output_train_path, stack_in_time, index_list=self.common_data['index_list']['train'])
+        self.read_data(readDataFiles(os.path.join(datadir, 'routines_test'), self.common_data), output_test_path, index_list=self.common_data['index_list']['test'], plot_graphs=True)
+        self.read_data(readDataFiles(os.path.join(datadir, 'routines_train'), self.common_data), output_train_path, index_list=self.common_data['index_list']['train'])
         
         self.common_edge_data = {}
         for key in ['seen_edges', 'nonstatic_edges', 'home_graph']:
@@ -375,7 +235,7 @@ class ProcessDataset():
         height = int(dense_gt.size()[0])/10
         return axs, axsdense, (width, height)
 
-    def read_data(self, datareader, output_dir, stack_in_time, index_list=[], plot_graphs=False):
+    def read_data(self, datareader, output_dir, index_list=[], plot_graphs=False):
         if plot_graphs:
             figdense, axsdense = plt.subplots(1, datareader.len())
             fig, axs = plt.subplots(1, datareader.len())
@@ -384,8 +244,7 @@ class ProcessDataset():
             graph_sequence, activities, times, filename = datareader.get(idx)
             # activities = torch.Tensor(activities)
             nodes, edges, active_edges_mask, class_names, node_ids = self.read_graphs(graph_sequence)
-            if stack_in_time:
-                edges, activities, times = self.stack_routine(edges, activities, times)
+            edges, activities, times = self.stack_routine(edges, activities, times)
             f_out = os.path.join(output_dir,filename+'.pt')
             index_list.append((filename+'.pt', edges.size()[0]))
             data = {'nodes': nodes, 
@@ -410,12 +269,12 @@ class ProcessDataset():
         return
 
     def get_node_index(self, node, index, temp_data):
-        class_index = self.common_data['node_classes'].index(node['class_name'])
+        id_index = self.common_data['node_ids'].index(node['id'])
         assert len(temp_data['node_ids'])==index
         temp_data['node_idx_from_id'][node['id']] = index
         temp_data['node_ids'].append(node['id'])
         temp_data['node_class_from_idx'].append(node['class_name'])
-        return class_index
+        return id_index
 
     def read_graphs(self, graphs):
         temporary_data = {}
@@ -490,14 +349,6 @@ class ProcessDataset():
 
 
     def stack_routine(self, edges, activities, times):
-        # self.time_min = torch.Tensor([float("Inf")])
-        # self.time_max = -torch.Tensor([float("Inf")])
-        # assert times[0]==min(times), 'Times need to be monotonically increasing. First element should be min.'
-        # assert times[-1]==max(times), 'Times need to be monotonically increasing. Last element should be max.'
-        # time_min = floor(times[0]/self.common_data['dt'])*self.common_data['dt']
-        # time_max = ceil(times[-1]) + self.common_data['dt']
-        # if time_min < self.time_min: self.time_min = time_min
-        # if time_max > self.time_max: self.time_max = time_max
         ## TODO Maithili: Remove this for new datasets!!!
         times = torch.cat([times, torch.Tensor([float("Inf")])], dim=-1)
 
@@ -527,36 +378,11 @@ class ProcessDataset():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run model on routines.')
-    parser.add_argument('--path', type=str, default='data/UnitTestsWithActivityConversion0405/AorB_', help='Path where the data lives. Must contain routines, info and classes json files.')
-    parser.add_argument('--datatype', type=str, default='HOMER', help='Either Activity or Routines.')
-    parser.add_argument('--stack_in_time', action='store_true', help='Set if fixed timestep sequence is desired rather than action-based')
-    parser.add_argument('--coarse', action='store_true', help='Set if coarse actions should be read')
+    parser.add_argument('--path', type=str, default='HouseholdA', help='Path where the data lives. Must contain routines, info and classes json files.')
     parser.add_argument('--dt', type=int, help='Custom timestep')
     parser.add_argument('-y', action='store_true', help='Overwrite if path exists.')
     args = parser.parse_args()
 
-    args.stack_in_time = True
+    output_dirname = 'processed_seqLM_coarse'
 
-    if args.datatype in ['VH','WAH'] and args.stack_in_time:
-        stop = input(f'Are you sure you want to use {args.datatype} with stacking in time as {args.stack_in_time}? (y/n)')
-        if stop.lower() == 'n': 
-            change = input(f'Change stacking in time to {not args.stack_in_time}? (y/n)')
-            if change == 'y': 
-                args.stack_in_time = not args.stack_in_time
-                stop = 'y'
-        assert stop.lower() != 'n'
-    if args.datatype in ['HOMER'] and not args.stack_in_time:
-        stop = input(f'Are you sure you want to use {args.datatype} with stacking in time as {args.stack_in_time}? (y/n)')
-        if stop.lower() == 'n': 
-            change = input(f'Change stacking in time to {not args.stack_in_time}? (y/n)')
-            if change == 'y': 
-                args.stack_in_time = not args.stack_in_time
-                stop = 'y'
-        assert stop.lower() != 'n'
-
-    args.datatype = args.datatype.upper()
-    assert args.datatype in DATASET_TYPES, f"Invalid datatype {args.datatype}. Must be one of :{', '.join(DATASET_TYPES)}"
-
-    output_dirname = 'processed_seqLM' if args.stack_in_time else 'processed_obj_actLM'
-
-    ProcessDataset(args.path, dataset_type=args.datatype, output_path=os.path.join(args.path, output_dirname), overwrite=args.y, stack_in_time=args.stack_in_time, coarse=args.coarse, dt=args.dt)
+    ProcessDataset(args.path, output_path=os.path.join(args.path, output_dirname), overwrite=args.y, dt=args.dt)

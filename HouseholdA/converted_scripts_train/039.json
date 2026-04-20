@@ -1,0 +1,3545 @@
+{
+    "lines": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [7]"
+        ],
+        [],
+        [],
+        [
+            "[CLOSE] <bathroom_cabinet> (17) [10]",
+            "[TELEPORT] <tooth_paste> (1203) <toothbrush> (1204) [10]"
+        ],
+        [
+            "[TELEPORT] <tooth_paste> (1203) <bathroom_counter> (18) [11]"
+        ],
+        [],
+        [
+            "[SWITCHON] <faucet> (20) [12]"
+        ],
+        [
+            "[RINSE] <toothbrush> (1204) [13]"
+        ],
+        [
+            "[SWITCHOFF] <faucet> (20) [14]",
+            "[WASH] <toothbrush> (1204) [15]"
+        ],
+        [],
+        [
+            "[TELEPORT] <toothbrush> (1204) <toothbrush_holder> (1012) [17]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [20]",
+            "[TELEPORT] <tooth_paste> (1203) <bathroom_cabinet> (17) [20]",
+            "[CLOSE] <bathroom_cabinet> (17) [20]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <blanket> (1018) <sofa> (269) [25]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <sofa> (269) [30]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <tvstand> (273) [37]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <towel> (1205) <bathroom_counter> (18) [47]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [53]"
+        ],
+        [],
+        [],
+        [
+            "[SWITCHON] <hairdryer> (1122) [56]"
+        ],
+        [
+            "[SWITCHOFF] <hairdryer> (1122) [57]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <hairdryer> (1122) <bathroom_counter> (18) [60]"
+        ],
+        [
+            "[TELEPORT] <hairbrush> (1121) <bathroom_counter> (18) [61]"
+        ],
+        [],
+        [
+            "[CLOSE] <bathroom_cabinet> (17) [63]"
+        ],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [65]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <hairdryer> (1122) <bathroom_cabinet> (17) [70]"
+        ],
+        [
+            "[TELEPORT] <hairbrush> (1121) <bathroom_cabinet> (17) [71]"
+        ],
+        [],
+        [
+            "[CLOSE] <bathroom_cabinet> (17) [73]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [76]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <razor> (1174) <bathroom_counter> (18) [82]"
+        ],
+        [
+            "[TELEPORT] <shaving_cream> (1184) <bathroom_counter> (18) [83]"
+        ],
+        [],
+        [],
+        [
+            "[SWITCHON] <faucet> (20) [86]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[SCRUB] <shaving_cream> (1184) [91]"
+        ],
+        [
+            "[SCRUB] <razor> (1174) [92]"
+        ],
+        [],
+        [
+            "[TELEPORT] <razor> (1174) <bathroom_cabinet> (17) [94]"
+        ],
+        [
+            "[TELEPORT] <shaving_cream> (1184) <bathroom_cabinet> (17) [95]"
+        ],
+        [],
+        [
+            "[SWITCHOFF] <faucet> (20) [97]"
+        ],
+        [
+            "[CLOSE] <bathroom_cabinet> (17) [98]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <bathroom_cabinet> (17) [101]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[CLOSE] <bathroom_cabinet> (17) [105]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [108]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[CLOSE] <cupboard> (117) [112]"
+        ],
+        [],
+        [
+            "[TELEPORT] <bowl> (1026) <table> (114) [114]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [117]"
+        ],
+        [],
+        [
+            "[CLOSE] <cupboard> (117) [119]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <food_oatmeal> (1102) <bowl> (1026) [122]"
+        ],
+        [
+            "[TELEPORT] <food_oatmeal> (1102) <table> (114) [123]"
+        ],
+        [],
+        [
+            "[OPEN] <fridge> (1006) [125]"
+        ],
+        [],
+        [],
+        [
+            "[CLOSE] <fridge> (1006) [128]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <milk> (1144) <bowl> (1026) [131]"
+        ],
+        [
+            "[TELEPORT] <milk> (1144) <table> (114) [132]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <microwave> (135) [136]"
+        ],
+        [
+            "[TELEPORT] <bowl> (1026) <microwave> (135) [137]"
+        ],
+        [
+            "[CLOSE] <microwave> (135) [138]"
+        ],
+        [
+            "[SWITCHON] <microwave> (135) [139]"
+        ],
+        [
+            "[SWITCHOFF] <microwave> (135) [140]"
+        ],
+        [
+            "[OPEN] <microwave> (135) [141]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <bowl> (1026) <table> (114) [145]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [147]"
+        ],
+        [],
+        [],
+        [
+            "[CLOSE] <cupboard> (117) [150]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <spoon> (1193) <bowl> (1026) [153]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [160]"
+        ],
+        [
+            "[TELEPORT] <food_oatmeal> (1102) <cupboard> (117) [161]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [162]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <fridge> (1006) [166]"
+        ],
+        [
+            "[TELEPORT] <milk> (1144) <fridge> (1006) [167]"
+        ],
+        [
+            "[CLOSE] <fridge> (1006) [168]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <bowl> (1026) <sink> (120) [173]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <spoon> (1193) <sink> (120) [177]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[WASH] <bowl> (1026) [181]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [183]"
+        ],
+        [
+            "[TELEPORT] <bowl> (1026) <cupboard> (117) [184]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[WASH] <spoon> (1193) [188]"
+        ],
+        [],
+        [
+            "[TELEPORT] <spoon> (1193) <cupboard> (117) [190]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [191]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <filing_cabinet> (200) [197]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[CLOSE] <filing_cabinet> (200) [201]"
+        ],
+        [],
+        [
+            "[TELEPORT] <headset> (1123) <desk> (272) [203]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <filing_cabinet> (200) [211]"
+        ],
+        [
+            "[TELEPORT] <headset> (1123) <filing_cabinet> (200) [212]"
+        ],
+        [],
+        [
+            "[CLOSE] <filing_cabinet> (200) [214]"
+        ],
+        [],
+        [],
+        [
+            "[WASH] <faucet> (121) [217]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [219]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <plate> (1167) <kitchen_counter> (119) [223]"
+        ],
+        [],
+        [
+            "[OPEN] <fridge> (1006) [225]"
+        ],
+        [],
+        [],
+        [
+            "[CLOSE] <fridge> (1006) [228]"
+        ],
+        [],
+        [
+            "[TELEPORT] <food_cheese> (1088) <kitchen_counter> (119) [230]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <food_bread> (1083) <kitchen_counter> (119) [235]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [236]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <knife> (1137) <kitchen_counter> (119) [241]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <food_bread> (1083) <plate> (1167) [244]"
+        ],
+        [
+            "[TELEPORT] <food_bread> (1083) <kitchen_counter> (119) [245]"
+        ],
+        [],
+        [],
+        [
+            "[TELEPORT] <food_cheese> (1088) <plate> (1167) [248]"
+        ],
+        [
+            "[TELEPORT] <food_cheese> (1088) <kitchen_counter> (119) [249]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <plate> (1167) <table> (114) [253]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <food_bread> (1083) <kitchen_counter> (119) [258]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <fridge> (1006) [262]"
+        ],
+        [
+            "[TELEPORT] <food_cheese> (1088) <fridge> (1006) [263]"
+        ],
+        [
+            "[CLOSE] <fridge> (1006) [264]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <plate> (1167) <sink> (120) [268]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <knife> (1137) <sink> (120) [272]"
+        ],
+        [],
+        [],
+        [
+            "[RINSE] <plate> (1167) [275]"
+        ],
+        [
+            "[WIPE] <plate> (1167) [276]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [278]"
+        ],
+        [
+            "[TELEPORT] <plate> (1167) <cupboard> (117) [279]"
+        ],
+        [],
+        [],
+        [
+            "[RINSE] <knife> (1137) [282]"
+        ],
+        [
+            "[WIPE] <knife> (1137) [283]"
+        ],
+        [],
+        [
+            "[TELEPORT] <knife> (1137) <cupboard> (117) [285]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [286]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <blanket> (1018) <sofa> (269) [292]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <sofa> (269) [297]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <tvstand> (273) [304]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[OPEN] <cd_player> (1031) [311]"
+        ],
+        [
+            "[TELEPORT] <cd> (1030) <cd_player> (1031) [312]"
+        ],
+        [
+            "[CLOSE] <cd_player> (1031) [313]"
+        ],
+        [
+            "[SWITCHON] <cd_player> (1031) [314]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[SWITCHOFF] <cd_player> (1031) [319]"
+        ],
+        [],
+        [
+            "[OPEN] <cd_player> (1031) [321]"
+        ],
+        [],
+        [],
+        [
+            "[CLOSE] <cd_player> (1031) [324]"
+        ],
+        [],
+        [
+            "[TELEPORT] <cd> (1030) <table> (270) [326]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <chair> (271) [331]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <chair> (271) [335]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <home_office> (241) [340]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <book> (1023) <sofa> (269) [347]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <book> (1023) <sofa> (269) [353]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <book> (1023) <bookshelf> (196) [359]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <blanket> (1018) <sofa> (269) [365]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <sofa> (269) [370]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <remote_control> (1176) <tvstand> (273) [377]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <chessboard> (1034) <table> (114) [386]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <deck_of_cards> (1060) <table> (114) [390]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [393]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <tea> (1196) <table> (114) [397]"
+        ],
+        [],
+        [
+            "[CLOSE] <cupboard> (117) [399]"
+        ],
+        [],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [402]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <cup> (1058) <table> (114) [406]"
+        ],
+        [],
+        [
+            "[CLOSE] <cupboard> (117) [408]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[RINSE] <cup> (1058) [417]"
+        ],
+        [
+            "[TELEPORT] <cup> (1058) <sink> (120) [418]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [420]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <tea> (1196) <cupboard> (117) [425]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [426]"
+        ],
+        [],
+        [
+            "[OPEN] <cupboard> (117) [428]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <cup> (1058) <cupboard> (117) [432]"
+        ],
+        [
+            "[CLOSE] <cupboard> (117) [433]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <chessboard> (1034) <bookshelf> (124) [440]"
+        ],
+        [
+            "[TELEPORT] <deck_of_cards> (1060) <bookshelf> (124) [441]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[SWITCHON] <radio> (1172) [445]"
+        ],
+        [],
+        [
+            "[TELEPORT] <radio> (1172) <dining_room> (41) [447]"
+        ],
+        [
+            "[SWITCHOFF] <radio> (1172) [448]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <chair> (271) [453]"
+        ],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <chair> (271) [457]"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            "[TELEPORT] <instrument_guitar> (1126) <home_office> (241) [462]"
+        ],
+        []
+    ],
+    "timestamps": [
+        370.0,
+        370.25,
+        370.5,
+        370.75,
+        371.0,
+        371.0,
+        371.0,
+        371.0,
+        371.0,
+        371.0,
+        371.0,
+        371.5,
+        372.0,
+        372.5,
+        373.0,
+        373.0,
+        373.0,
+        373.0,
+        373.0,
+        373.0,
+        374.0,
+        376.0,
+        378.0,
+        380.0,
+        382.0,
+        384.0,
+        384.2,
+        384.4,
+        384.59999999999997,
+        384.79999999999995,
+        384.99999999999994,
+        399.99999999999994,
+        414.99999999999994,
+        429.99999999999994,
+        430.24999999999994,
+        430.49999999999994,
+        430.74999999999994,
+        430.99999999999994,
+        432.99999999999994,
+        436.33333333333326,
+        439.6666666666666,
+        442.9999999999999,
+        443.1666666666666,
+        443.33333333333326,
+        443.49999999999994,
+        443.66666666666663,
+        443.8333333333333,
+        444.0,
+        444.0,
+        444.0,
+        444.0,
+        444.0,
+        444.4166666666667,
+        444.83333333333337,
+        445.25000000000006,
+        445.66666666666674,
+        446.0833333333334,
+        446.5000000000001,
+        446.9166666666668,
+        447.3333333333335,
+        447.75000000000017,
+        448.16666666666686,
+        448.58333333333354,
+        449.0000000000002,
+        449.2000000000002,
+        449.4000000000002,
+        449.6000000000002,
+        449.8000000000002,
+        450.00000000000017,
+        450.20000000000016,
+        450.40000000000015,
+        450.60000000000014,
+        450.8000000000001,
+        451.0000000000001,
+        461.4000000000001,
+        461.80000000000007,
+        462.20000000000005,
+        462.6,
+        463.0,
+        463.4,
+        463.79999999999995,
+        464.19999999999993,
+        464.5999999999999,
+        464.9999999999999,
+        465.39999999999986,
+        465.79999999999984,
+        466.1999999999998,
+        466.5999999999998,
+        466.9999999999998,
+        467.39999999999975,
+        467.7999999999997,
+        468.1999999999997,
+        468.5999999999997,
+        468.99999999999966,
+        469.39999999999964,
+        469.7999999999996,
+        470.1999999999996,
+        470.59999999999957,
+        470.99999999999955,
+        471.1428571428567,
+        471.2857142857139,
+        471.42857142857105,
+        471.5714285714282,
+        471.7142857142854,
+        471.85714285714255,
+        471.9999999999997,
+        482.22222222222194,
+        482.4444444444442,
+        482.6666666666664,
+        482.88888888888863,
+        483.11111111111086,
+        483.3333333333331,
+        483.5555555555553,
+        483.77777777777754,
+        483.9999999999998,
+        484.3333333333331,
+        484.6666666666664,
+        484.9999999999997,
+        485.33333333333303,
+        485.66666666666634,
+        485.99999999999966,
+        486.333333333333,
+        486.6666666666663,
+        486.9999999999996,
+        487.3333333333329,
+        487.66666666666623,
+        487.99999999999955,
+        488.33333333333286,
+        488.6666666666662,
+        488.9999999999995,
+        489.3333333333328,
+        489.6666666666661,
+        489.99999999999943,
+        490.15384615384556,
+        490.3076923076917,
+        490.4615384615378,
+        490.61538461538396,
+        490.7692307692301,
+        490.9230769230762,
+        491.07692307692236,
+        491.2307692307685,
+        491.3846153846146,
+        491.53846153846075,
+        491.6923076923069,
+        491.846153846153,
+        491.99999999999915,
+        492.37499999999915,
+        492.74999999999915,
+        493.12499999999915,
+        493.49999999999915,
+        493.87499999999915,
+        494.24999999999915,
+        494.62499999999915,
+        494.99999999999915,
+        497.66666666666583,
+        500.3333333333325,
+        502.9999999999992,
+        503.3333333333325,
+        503.66666666666583,
+        503.99999999999915,
+        504.33333333333246,
+        504.6666666666658,
+        504.9999999999991,
+        505.3333333333324,
+        505.6666666666657,
+        505.99999999999903,
+        506.33333333333235,
+        506.66666666666566,
+        506.999999999999,
+        507.44444444444343,
+        507.8888888888879,
+        508.33333333333235,
+        508.7777777777768,
+        509.22222222222126,
+        509.6666666666657,
+        510.1111111111102,
+        510.55555555555463,
+        510.9999999999991,
+        511.7142857142848,
+        512.4285714285705,
+        513.1428571428562,
+        513.8571428571419,
+        514.5714285714275,
+        515.2857142857132,
+        515.9999999999989,
+        516.7142857142845,
+        517.4285714285702,
+        518.1428571428559,
+        518.8571428571415,
+        519.5714285714272,
+        520.2857142857129,
+        520.9999999999985,
+        655.9999999999985,
+        660.9999999999985,
+        665.9999999999985,
+        666.1111111111096,
+        666.2222222222207,
+        666.3333333333318,
+        666.4444444444429,
+        666.555555555554,
+        666.666666666665,
+        666.7777777777761,
+        666.8888888888872,
+        666.9999999999983,
+        671.9999999999983,
+        676.9999999999983,
+        681.9999999999983,
+        682.1249999999983,
+        682.2499999999983,
+        682.3749999999983,
+        682.4999999999983,
+        682.6249999999983,
+        682.7499999999983,
+        682.8749999999983,
+        682.9999999999983,
+        683.3333333333317,
+        683.666666666665,
+        683.9999999999984,
+        684.166666666665,
+        684.3333333333317,
+        684.4999999999983,
+        684.6666666666649,
+        684.8333333333316,
+        684.9999999999982,
+        685.1428571428553,
+        685.2857142857124,
+        685.4285714285695,
+        685.5714285714266,
+        685.7142857142837,
+        685.8571428571408,
+        685.999999999998,
+        686.1666666666646,
+        686.3333333333312,
+        686.4999999999978,
+        686.6666666666645,
+        686.8333333333311,
+        686.9999999999977,
+        687.1999999999978,
+        687.3999999999978,
+        687.5999999999979,
+        687.7999999999979,
+        687.999999999998,
+        688.4166666666646,
+        688.8333333333312,
+        689.2499999999978,
+        689.6666666666645,
+        690.0833333333311,
+        690.4999999999977,
+        690.9166666666644,
+        691.333333333331,
+        691.7499999999976,
+        692.1666666666642,
+        692.5833333333309,
+        692.9999999999975,
+        701.9999999999975,
+        702.2499999999975,
+        702.4999999999975,
+        702.7499999999975,
+        702.9999999999975,
+        703.1666666666641,
+        703.3333333333308,
+        703.4999999999974,
+        703.666666666664,
+        703.8333333333306,
+        703.9999999999973,
+        704.3749999999973,
+        704.7499999999973,
+        705.1249999999973,
+        705.4999999999973,
+        705.8749999999973,
+        706.2499999999973,
+        706.6249999999973,
+        706.9999999999973,
+        707.4285714285687,
+        707.8571428571402,
+        708.2857142857116,
+        708.714285714283,
+        709.1428571428545,
+        709.5714285714259,
+        709.9999999999974,
+        710.4285714285688,
+        710.8571428571403,
+        711.2857142857117,
+        711.7142857142832,
+        712.1428571428546,
+        712.571428571426,
+        712.9999999999975,
+        713.9999999999975,
+        715.9999999999975,
+        717.9999999999975,
+        719.9999999999975,
+        721.9999999999975,
+        723.9999999999975,
+        724.1999999999975,
+        724.3999999999976,
+        724.5999999999976,
+        724.7999999999977,
+        724.9999999999977,
+        739.9999999999977,
+        754.9999999999977,
+        769.9999999999977,
+        770.2499999999977,
+        770.4999999999977,
+        770.7499999999977,
+        770.9999999999977,
+        772.9999999999977,
+        873.4999999999977,
+        873.9999999999977,
+        874.2857142857121,
+        874.5714285714264,
+        874.8571428571407,
+        875.1428571428551,
+        875.4285714285694,
+        875.7142857142837,
+        875.9999999999981,
+        876.4999999999981,
+        876.9999999999981,
+        881.9999999999981,
+        886.9999999999981,
+        891.9999999999981,
+        892.1428571428552,
+        892.2857142857123,
+        892.4285714285694,
+        892.5714285714265,
+        892.7142857142836,
+        892.8571428571407,
+        892.9999999999978,
+        913.9999999999978,
+        914.9999999999978,
+        915.9999999999978,
+        916.9999999999978,
+        917.9999999999978,
+        921.7499999999978,
+        925.4999999999978,
+        929.2499999999978,
+        932.9999999999978,
+        933.3999999999978,
+        933.7999999999978,
+        934.1999999999978,
+        934.5999999999977,
+        934.9999999999977,
+        935.2499999999977,
+        935.4999999999977,
+        935.7499999999977,
+        935.9999999999977,
+        936.3333333333311,
+        936.6666666666645,
+        936.9999999999978,
+        937.3333333333312,
+        937.6666666666646,
+        937.999999999998,
+        947.999999999998,
+        948.499999999998,
+        948.999999999998,
+        949.1666666666646,
+        949.3333333333312,
+        949.4999999999978,
+        949.6666666666645,
+        949.8333333333311,
+        949.9999999999977,
+        1030.9999999999977,
+        1032.9999999999977,
+        1034.9999999999977,
+        1036.9999999999977,
+        1038.9999999999977,
+        1040.9999999999977,
+        1041.1999999999978,
+        1041.3999999999978,
+        1041.5999999999979,
+        1041.799999999998,
+        1041.999999999998,
+        1056.999999999998,
+        1071.999999999998,
+        1086.999999999998,
+        1087.249999999998,
+        1087.499999999998,
+        1087.749999999998,
+        1087.999999999998,
+        1089.999999999998,
+        1092.499999999998,
+        1094.999999999998,
+        1097.499999999998,
+        1099.999999999998,
+        1100.374999999998,
+        1100.749999999998,
+        1101.124999999998,
+        1101.499999999998,
+        1101.874999999998,
+        1102.249999999998,
+        1102.624999999998,
+        1102.999999999998,
+        1103.5555555555536,
+        1104.1111111111093,
+        1104.666666666665,
+        1105.2222222222206,
+        1105.7777777777762,
+        1106.333333333332,
+        1106.8888888888875,
+        1107.4444444444432,
+        1107.9999999999989,
+        1108.5555555555545,
+        1109.1111111111102,
+        1109.6666666666658,
+        1110.2222222222215,
+        1110.7777777777771,
+        1111.3333333333328,
+        1111.8888888888885,
+        1112.4444444444441,
+        1112.9999999999998,
+        1120.4999999999998,
+        1127.9999999999998,
+        1135.4999999999998,
+        1142.9999999999998,
+        1144.6666666666665,
+        1146.3333333333333,
+        1148.0,
+        1149.6666666666667,
+        1151.3333333333335,
+        1153.0000000000002,
+        1153.3750000000002,
+        1153.7500000000002,
+        1154.1250000000002,
+        1154.5000000000002,
+        1154.8750000000002,
+        1155.2500000000002,
+        1155.6250000000002,
+        1156.0000000000002,
+        1156.571428571429,
+        1157.1428571428576,
+        1157.7142857142862,
+        1158.285714285715,
+        1158.8571428571436,
+        1159.4285714285722,
+        1160.000000000001,
+        1160.375000000001,
+        1160.750000000001,
+        1161.125000000001,
+        1161.500000000001,
+        1161.875000000001,
+        1162.250000000001,
+        1162.625000000001,
+        1163.000000000001,
+        1163.1666666666677,
+        1163.3333333333344,
+        1163.5000000000011,
+        1163.6666666666679,
+        1163.8333333333346,
+        1164.0000000000014,
+        1179.0000000000014,
+        1210.0000000000014,
+        1211.0000000000014,
+        1212.0000000000014,
+        1213.0000000000014,
+        1214.0000000000014,
+        1217.7500000000014,
+        1221.5000000000014,
+        1225.2500000000014,
+        1229.0000000000014,
+        1229.4000000000015,
+        1229.8000000000015,
+        1230.2000000000016,
+        1230.6000000000017,
+        1231.0000000000018,
+        1501.0000000000018
+    ],
+    "activity_labels": [
+        "wake_up",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "brushing_teeth",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "showering",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "getting_dressed",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "wash_dishes_breakfast",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "computer_work",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "wash_dishes_lunch",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "reading",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "watching_tv",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "socializing",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "listening_to_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "playing_music",
+        "sleep"
+    ],
+    "micro_activity_labels": [
+        "Wakeup",
+        "Brush teeth",
+        "Brush teeth",
+        "Brush teeth",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Brush teeth",
+        "Brush teeth",
+        null,
+        "Brush teeth",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Putaway TV remote",
+        null,
+        null,
+        "Putaway TV remote",
+        "Putaway TV remote",
+        "Take Shower",
+        "Take Shower",
+        "Take Shower",
+        "Take Shower",
+        "Take Shower",
+        "Take Shower",
+        null,
+        null,
+        "Take Shower",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        "Dry hair",
+        null,
+        null,
+        null,
+        null,
+        "Dry hair",
+        "Dry hair",
+        "Idle",
+        "Shave",
+        "Shave",
+        "Shave",
+        "Shave",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Shave",
+        "Shave",
+        "Shave",
+        "Shave",
+        "Shave",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Shave",
+        "Shave",
+        "Shave",
+        "Shave",
+        "Put deodorant",
+        "Put deodorant",
+        "Put deodorant",
+        "Put deodorant",
+        null,
+        "Put deodorant",
+        "Idle",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        "Prepare Oatmeal",
+        null,
+        null,
+        null,
+        null,
+        "Prepare Oatmeal",
+        "Eat Oatmeal",
+        "Eat Oatmeal",
+        "Eat Oatmeal",
+        "Putaway Oatmeal",
+        null,
+        null,
+        null,
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        null,
+        null,
+        null,
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        null,
+        null,
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        "Putaway Oatmeal",
+        null,
+        "Putaway Oatmeal",
+        "Wash Bowl and Spoon",
+        "Wash Bowl and Spoon",
+        null,
+        null,
+        null,
+        null,
+        "Wash Bowl and Spoon",
+        "Wash Bowl and Spoon",
+        "Wash Bowl and Spoon",
+        null,
+        null,
+        null,
+        "Wash Bowl and Spoon",
+        "Idle",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        null,
+        null,
+        null,
+        null,
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        null,
+        null,
+        null,
+        "Desk work",
+        "Desk work",
+        "Desk work",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        null,
+        null,
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        null,
+        null,
+        null,
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        null,
+        null,
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        "Prepare Lunch",
+        null,
+        null,
+        "Prepare Lunch",
+        null,
+        null,
+        null,
+        "Prepare Lunch",
+        null,
+        null,
+        null,
+        "Prepare Lunch",
+        "Set table",
+        null,
+        null,
+        "Set table",
+        "Eat",
+        "Cleanup Table",
+        null,
+        null,
+        "Cleanup Table",
+        "Cleanup Table",
+        null,
+        null,
+        null,
+        "Cleanup Table",
+        "Cleanup Table",
+        "Cleanup Table",
+        null,
+        null,
+        "Cleanup Table",
+        "Cleanup Table",
+        null,
+        null,
+        "Cleanup Table",
+        "Wash Dishes",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Wash Dishes",
+        "Wash Dishes",
+        null,
+        null,
+        null,
+        null,
+        "Wash Dishes",
+        "Wash Dishes",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Putaway TV remote",
+        null,
+        null,
+        "Putaway TV remote",
+        "Idle",
+        "Setup CD Player",
+        "Setup CD Player",
+        "Setup CD Player",
+        null,
+        null,
+        null,
+        "Setup CD Player",
+        "Setup CD Player",
+        "Setup CD Player",
+        "Listen to music",
+        "Listen to music",
+        "Listen to music",
+        "Listen to music",
+        "Listen to music",
+        "Putaway CD Player",
+        "Putaway CD Player",
+        "Putaway CD Player",
+        null,
+        null,
+        null,
+        "Idle",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        null,
+        "Play Guitar",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        "Play Guitar",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        null,
+        "Play Guitar",
+        "Get Book",
+        "Get Book",
+        "Get Book",
+        null,
+        null,
+        null,
+        "Get Book",
+        "Read",
+        null,
+        null,
+        null,
+        null,
+        "Read",
+        "Putaway Book",
+        null,
+        null,
+        null,
+        null,
+        "Idle",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Sit to watch TV",
+        "Sit to watch TV",
+        null,
+        null,
+        "Sit to watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Watch TV",
+        "Putaway TV remote",
+        null,
+        null,
+        "Putaway TV remote",
+        "Putaway TV remote",
+        "Greet friends",
+        "Greet friends",
+        "Greet friends",
+        "Greet friends",
+        "Prepare games",
+        null,
+        null,
+        "Prepare games",
+        "Prepare games",
+        null,
+        null,
+        "Prepare games",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        null,
+        null,
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        null,
+        null,
+        "Prepare tea",
+        "Prepare tea",
+        "Prepare tea",
+        "Socialize",
+        "Socialize",
+        "Socialize",
+        "Socialize",
+        "Cleanup",
+        "Cleanup",
+        null,
+        null,
+        null,
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        null,
+        null,
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        "Cleanup",
+        null,
+        null,
+        "Cleanup",
+        "Cleanup",
+        "Return games",
+        "Return games",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Return games",
+        "Listen to radio",
+        "Listen to radio",
+        null,
+        null,
+        null,
+        "Listen to radio",
+        "Idle",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        null,
+        "Play Guitar",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        "Play Guitar",
+        "Play Guitar",
+        "Play Guitar",
+        null,
+        null,
+        "Idle",
+        "Sleeping"
+    ],
+    "state_changes": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ],
+            [
+                "bathroom_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "faucet",
+                [
+                    "OFF"
+                ],
+                [
+                    "ON"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "shaving_cream",
+                [],
+                [
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "faucet",
+                [
+                    "ON"
+                ],
+                [
+                    "OFF"
+                ]
+            ]
+        ],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [
+            [
+                "bathroom_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ],
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "microwave",
+                [
+                    "OFF",
+                    "CLOSED"
+                ],
+                [
+                    "OFF",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [
+            [
+                "microwave",
+                [
+                    "OFF",
+                    "OPEN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [
+            [
+                "microwave",
+                [
+                    "OFF",
+                    "CLOSED"
+                ],
+                [
+                    "ON",
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [
+            [
+                "microwave",
+                [
+                    "ON",
+                    "CLOSED"
+                ],
+                [
+                    "OFF",
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [
+            [
+                "microwave",
+                [
+                    "OFF",
+                    "CLOSED"
+                ],
+                [
+                    "OFF",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ],
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "filing_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "filing_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "filing_cabinet",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "filing_cabinet",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "faucet",
+                [
+                    "OFF"
+                ],
+                [
+                    "OFF",
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ],
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ],
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ]
+            ]
+        ],
+        [
+            [
+                "fridge",
+                [
+                    "OFF",
+                    "CLEAN",
+                    "OPEN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cd_player",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN",
+                    "PLUGGED_IN"
+                ],
+                [
+                    "OPEN",
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF"
+                ]
+            ]
+        ],
+        [
+            [
+                "cd_player",
+                [
+                    "OPEN",
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF"
+                ],
+                [
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF",
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [
+            [
+                "cd_player",
+                [
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF",
+                    "CLOSED"
+                ],
+                [
+                    "ON",
+                    "CLOSED",
+                    "CLEAN",
+                    "PLUGGED_IN"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [
+            [
+                "cd_player",
+                [
+                    "ON",
+                    "CLOSED",
+                    "CLEAN",
+                    "PLUGGED_IN"
+                ],
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN",
+                    "PLUGGED_IN"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "cd_player",
+                [
+                    "OFF",
+                    "CLOSED",
+                    "CLEAN",
+                    "PLUGGED_IN"
+                ],
+                [
+                    "OPEN",
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cd_player",
+                [
+                    "OPEN",
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF"
+                ],
+                [
+                    "PLUGGED_IN",
+                    "CLEAN",
+                    "OFF",
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [
+            [
+                "character",
+                [],
+                [
+                    "SITTING"
+                ]
+            ]
+        ],
+        [
+            [
+                "character",
+                [
+                    "SITTING"
+                ],
+                []
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "CLOSED"
+                ],
+                [
+                    "OPEN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "cupboard",
+                [
+                    "OPEN"
+                ],
+                [
+                    "CLOSED"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            [
+                "radio",
+                [
+                    "OFF",
+                    "PLUGGED_IN"
+                ],
+                [
+                    "ON",
+                    "PLUGGED_IN"
+                ]
+            ]
+        ],
+        [
+            [
+                "radio",
+                [
+                    "ON",
+                    "PLUGGED_IN"
+                ],
+                [
+                    "OFF",
+                    "PLUGGED_IN"
+                ]
+            ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "schedule": [
+        {
+            "activity": "wake_up",
+            "start": 360,
+            "end": 370
+        },
+        {
+            "activity": "brushing_teeth",
+            "start": 370,
+            "end": 373
+        },
+        {
+            "activity": "watching_tv",
+            "start": 373,
+            "end": 433
+        },
+        {
+            "activity": "showering",
+            "start": 433,
+            "end": 451
+        },
+        {
+            "activity": "getting_dressed",
+            "start": 461,
+            "end": 472
+        },
+        {
+            "activity": "breakfast",
+            "start": 482,
+            "end": 511
+        },
+        {
+            "activity": "wash_dishes_breakfast",
+            "start": 511,
+            "end": 521
+        },
+        {
+            "activity": "computer_work",
+            "start": 651,
+            "end": 683
+        },
+        {
+            "activity": "lunch",
+            "start": 683,
+            "end": 707
+        },
+        {
+            "activity": "wash_dishes_lunch",
+            "start": 707,
+            "end": 713
+        },
+        {
+            "activity": "watching_tv",
+            "start": 713,
+            "end": 773
+        },
+        {
+            "activity": "listening_to_music",
+            "start": 873,
+            "end": 893
+        },
+        {
+            "activity": "playing_music",
+            "start": 913,
+            "end": 935
+        },
+        {
+            "activity": "reading",
+            "start": 935,
+            "end": 950
+        },
+        {
+            "activity": "watching_tv",
+            "start": 1030,
+            "end": 1090
+        },
+        {
+            "activity": "socializing",
+            "start": 1090,
+            "end": 1163
+        },
+        {
+            "activity": "listening_to_music",
+            "start": 1163,
+            "end": 1179
+        },
+        {
+            "activity": "playing_music",
+            "start": 1209,
+            "end": 1231
+        },
+        {
+            "activity": "sleep",
+            "start": 1261,
+            "end": 1501
+        }
+    ]
+}
